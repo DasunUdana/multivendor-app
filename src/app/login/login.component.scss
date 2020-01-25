@@ -1,0 +1,21 @@
+ion-avatar {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+ion-col.center-any-object {
+  display: flex;
+  justify-content: center;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  --color: white;
+
+  ion-title {
+    --color: white;
+  }
+}
+

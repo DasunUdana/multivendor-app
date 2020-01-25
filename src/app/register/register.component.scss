@@ -1,0 +1,32 @@
+ion-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+ion-col.center-any-object {
+  display: flex;
+  justify-content: center;
+}
+
+.register-toggle {
+  --background: deeppink;
+}
+
+ion-item.transparent {
+  --background: transparentize();
+}
+
+.white-text {
+  color: white !important;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  --color: white;
+
+  ion-title {
+    --color: white;
+  }
+}

@@ -1,0 +1,30 @@
+ion-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+ion-col.center-any-object {
+  display: flex;
+  justify-content: center;
+}
+
+.app-name {
+  position: absolute;
+  font-size: 40px;
+  color: deeppink;
+  font-family: cursive;
+  text-align: center;
+  top: 10%;
+  display: table;
+  padding: 0 10px;
+
+  div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.logo-img {
+  width: 190px;
+}
