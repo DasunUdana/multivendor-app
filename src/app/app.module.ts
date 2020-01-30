@@ -15,9 +15,8 @@ import { PreAuthComponent } from './pre-auth/pre-auth.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
-import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
-import { AngularFireDatabaseModule, AngularFireDatabase } from '@angular/fire/database';
-import { FirebaseAuthentication } from '@ionic-native/firebase-authentication/ngx';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
 
 import { FormsModule } from '@angular/forms';
 
@@ -31,9 +30,6 @@ import { FormsModule } from '@angular/forms';
   providers: [
     StatusBar,
     SplashScreen,
-    AngularFireDatabase,
-    AngularFireAuth,
-    FirebaseAuthentication,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent]

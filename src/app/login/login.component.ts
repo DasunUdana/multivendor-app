@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FireBaseService} from "../services/fire-base.service";
+import {FireBaseService} from '../services/fire-base.service';
 
 @Component({
   selector: 'app-login',
@@ -7,11 +7,18 @@ import {FireBaseService} from "../services/fire-base.service";
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  userName: '';
+  password: '';
 
   constructor(private service: FireBaseService) { }
 
   ngOnInit() {
-    this.service.createUser('dasun', 'test123');
+  }
+
+  onLogin() {
+    console.log(this.userName);
+    console.log(this.password);
+    this.service.loginUser(this.userName, this.password);
   }
 
 }

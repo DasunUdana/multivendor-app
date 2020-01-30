@@ -1,15 +1,26 @@
 import { Injectable } from '@angular/core';
-import { FirebaseAuthentication } from '@ionic-native/firebase-authentication/ngx';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FireBaseService {
 
-  constructor(private fireBaseAuth: FirebaseAuthentication) { }
+  constructor(private fireBaseAuth: AngularFireAuth) { }
 
   createUser(email, password) {
-    let gg = this.fireBaseAuth.createUserWithEmailAndPassword(email, password);
-    console.error(gg);
+    this.fireBaseAuth.auth.createUserWithEmailAndPassword(email, password).then((res) => {
+      console.error(res);
+    }).catch((res) => {
+      console.error(res);
+    });
+  }
+
+  loginUser(username, password) {
+    this.fireBaseAuth.auth.signInWithEmailAndPassword(username, password).then((res) => {
+      console.error(res);
+    }).catch((res) => {
+      console.error(res);
+    });
   }
 }
