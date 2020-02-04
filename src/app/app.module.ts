@@ -16,7 +16,7 @@ import { PreAuthComponent } from './pre-auth/pre-auth.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule} from '@angular/fire/auth';
-import { AngularFireDatabaseModule} from '@angular/fire/database';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
 
 import { FormsModule } from '@angular/forms';
 
@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule, AngularFireDatabaseModule
+    AngularFireAuthModule, AngularFirestoreModule
   ],
   providers: [
     StatusBar,

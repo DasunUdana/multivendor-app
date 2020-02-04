@@ -31,7 +31,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Saloon Name</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="saloonName"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -39,7 +39,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Email</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="saloonEmail"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -47,7 +47,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Contact No</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="saloonContactNumber"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -55,15 +55,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Location</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-            </ion-col>
-          </ion-row>
-          <ion-row class="align-items-center white-text">
-            <ion-col>
-              <ion-item>
-                <ion-label position="floating">Location</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="saloonLocation"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -71,7 +63,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Services</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="saloonServices"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -79,7 +71,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Password</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="password" [(ngModel)]="saloonPassword"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -87,7 +79,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Retype Password</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="password" [(ngModel)]="saloonRePassword"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -96,16 +88,16 @@
           <ion-row class="align-items-center white-text">
             <ion-col>
               <ion-item>
-                <ion-label position="floating">Name</ion-label>
-                <ion-input></ion-input>
+                <ion-label  position="floating">Name</ion-label>
+                <ion-input [(ngModel)]="customerName"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
           <ion-row class="align-items-center white-text">
             <ion-col>
               <ion-item>
-                <ion-label position="floating">Email</ion-label>
-                <ion-input></ion-input>
+                <ion-label  position="floating">Email</ion-label>
+                <ion-input  [(ngModel)]="customerEmail" ></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -113,15 +105,15 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Contact No</ion-label>
-                <ion-input></ion-input>
+                <ion-input [(ngModel)]="customerContactNumber"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
           <ion-row class="align-items-center white-text">
             <ion-col>
               <ion-item>
-                <ion-label position="floating">Password</ion-label>
-                <ion-input></ion-input>
+                <ion-label  position="floating">Password</ion-label>
+                <ion-input type="password" [(ngModel)]="customerPassword"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -129,7 +121,7 @@
             <ion-col>
               <ion-item>
                 <ion-label position="floating">Retype Password</ion-label>
-                <ion-input></ion-input>
+                <ion-input type="password" [(ngModel)]="customerRePassword"></ion-input>
               </ion-item>
             </ion-col>
           </ion-row>
@@ -137,7 +129,7 @@
       </ion-row>
       <ion-row class="align-items-center white-text">
         <ion-col>
-          <ion-button expand="block">{{buttonTxt}}</ion-button>
+          <ion-button (click)="register()" expand="block">{{buttonTxt}}</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
