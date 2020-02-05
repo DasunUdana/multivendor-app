@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
+
 export class LoginComponent implements OnInit {
   userName: '';
   password: '';
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit {
   onLogin() {
     this.service.loginUser(this.userName, this.password).then(() => {
       this.presentToast('Login Success', false);
-      this.router.navigate(['/home']);
+      this.router.navigate(['/homeuser']);
     }).catch(((err) => {
       this.presentToast(err, true);
     }));

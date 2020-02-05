@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { PreAuthComponent } from './pre-auth/pre-auth.component';
+import { HomeUserComponent } from './home-user/home-user.component';
+import { HomeSaloonComponent } from './home-saloon/home-saloon.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
@@ -21,7 +23,7 @@ import { AngularFirestoreModule} from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, HomeComponent, PreAuthComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, HomeComponent, PreAuthComponent, HomeUserComponent, HomeSaloonComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
